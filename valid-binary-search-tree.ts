@@ -5,7 +5,7 @@ class NodeItem {
         ){}
 
         nodeSolution(){
-            let isValid = this.isValidBST(this,-Infinity,Infinity)
+            let isValid = this.isValidBST(this,-Number.MAX_VALUE,Number.MAX_VALUE)
             return isValid
         }
 
