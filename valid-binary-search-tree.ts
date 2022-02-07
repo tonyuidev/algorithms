@@ -29,4 +29,4 @@ node.right = new NodeItem(7);
 let valid = node.nodeSolution(); // true
 
 node.right.left = new NodeItem(2);
-let valid = node.nodeSolution(); // false
+let valid_false = node.nodeSolution(); // false
