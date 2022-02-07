@@ -28,6 +28,7 @@ class NodeItem {
 let node = new NodeItem(5)
 node.left =  new NodeItem(4)
 node.right = new NodeItem(7)
-node.right.left = new NodeItem(2)
+let valid = node.nodeSolution() // true
 
-console.log(node.nodeSolution())
+node.right.left = new NodeItem(2)
+let valid = node.nodeSolution() // false
