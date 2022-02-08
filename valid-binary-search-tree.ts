@@ -23,10 +23,10 @@ class NodeItem {
   }
 }
 
-let node = new NodeItem(5);
-node.left = new NodeItem(4);
-node.right = new NodeItem(7);
-let valid = node.nodeSolution(); // true
+let node = new NodeItem(5); // define main BST node
+node.left = new NodeItem(4); // create node to left
+node.right = new NodeItem(7); // create node to right
+let valid = node.nodeSolution(); // the binary tree is valid
 
-node.right.left = new NodeItem(2);
-let valid_false = node.nodeSolution(); // false
+node.right.left = new NodeItem(2); // add a node to the left of node.right
+let valid_false = node.nodeSolution(); // the binary tree is now invalid
