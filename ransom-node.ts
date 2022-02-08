@@ -13,7 +13,6 @@ class RansomNote {
       }
   
       let noteLetters = note.split("");
-      console.log(noteLetters);
       for (let l in noteLetters) {
         let key = noteLetters[l];
         if (letters[key] <= 0 || typeof letters[key] == "undefined") {
